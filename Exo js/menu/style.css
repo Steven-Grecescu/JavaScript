@@ -1,0 +1,42 @@
+.showcase
+{
+  position: absolute;
+  left: -250px;
+  height: 100%;
+  width: 10%;
+  background: rgb(49, 48, 48);
+  transition: 0.8s;
+  opacity: 0%;
+  bottom: 1px;
+
+}
+.showcase.active
+{
+  left: 0px;
+  opacity: 100%;
+  bottom: 1px;
+}
+
+.btn
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10px;
+  transition: 0.8s;
+}
+.btn.active
+{
+  left: 250px;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #e2dcdc;
+}
+
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}

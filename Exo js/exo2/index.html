@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">Saisir la factorielle voulue :</label>
+    <input type="nombre" name="nombre" id="factorielle" />
+    <button class="btn">Valider</button>
+    <div id="resultat"></div>
+    <script>
+      function fact(nombre) {
+        var nombre,
+          f = 1;
+        for (var i = 1; i <= nombre; i++) {
+          f = f * i;
+        }
+        return f;
+      }
+      var nombre = document.querySelector("#factorielle").value;
+      var btn = document.querySelector(".btn");
+      var resultat = document.querySelector("#resultat");
+      btn.addEventListener("click", function () {
+      console.log(fact(nombre));
+      resultat.innerHTML = fact(nombre);
+      });
+    </script>
+  </body>
+</html>
