@@ -7,25 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="div" class="header">
-        <h2>Liste de tache</h2>
+    
+    <h1>Liste de tâches</h1>
+    <p>Voici la liste des taches a réaliser !</p>
+    <td>
+    <input type="text" id="nouveauToDo" placeholder="Ajouter une nouvelle tâche" />
+    <button class="Ajouter" onclick="ajouterTache()">Ajouter</button>
+    <div id="listeTaches"></div>
+    </td>
 
-        <span onclick="ajouterTacher()" class="addBtn">Ajouter</span>
 
-      </div>
-      
-<div id= "UL"></div>
-     <div id="UL">
-        <li>Faire les courses</li>
-        <span onclick="" class="">Modifier</span>
-        <span class="">Supprimer</span>
-      </div> 
-
-        <li class="">Finir le JS</li>
-        <span onclick="" class="">Modifier</span>
-        <span class="">Supprimer</span>
-  
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
