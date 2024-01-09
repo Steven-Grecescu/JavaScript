@@ -34,3 +34,9 @@ function modifierTache(id) {
 function supprimerTache(id) {
   document.querySelector(".tache" + id).remove();
 }
+
+
+function darkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+} 

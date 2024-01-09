@@ -1,87 +1,76 @@
 * {
     box-sizing: border-box;
   }
-  
-  
-  ul {
-    margin: 0;
-    padding: 0;
+
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  h1{
+    text-align: center;
+  }
+
+  p{
+      text-align: center;
   }
   
+   span {
 
-   li {
     cursor: pointer;
     position: relative;
-    /* padding: 12px 8px 12px 40px; */
-    background: #eee;
+    padding: 12px 8px 12px 40px;
+
+    width: 100%;
     font-size: 18px;
     transition: 0.2s;
+    /* display: flex;
+    flex-direction: column; */
   }
-  
 
-  
+  div {
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    text-align: center;
 
-  ul li:hover {
+    width: 100%;
+    font-size: 18px;
+    transition: 0.2s;
+    display:flex;
+    flex-direction: column;
+  }
+
+  span:hover {
     background: #9c9393;
   }
   
- 
-  ul li.checked {
+  span.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
   }
   
  
-   li.checked::before {
+   span::before {
     content: '';
-    position: absolute;
+    /* position: absolute; */
     border-color: #fffcfc;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
     left: 16px;
-
     height: 15px;
     width: 7px;
   }
   
-
-  .close {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-  }
-  
-  .close:hover {
-    background-color: #524d4d;
-    color: white;
-  }
-  
-
-  .header {
-    background-color: #ffffff;
-    padding: 30px 40px;
-    color: rgb(136, 127, 127);
-    text-align: center;
-  }
-  
-
-  .header:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
   
  
   input {
     margin: 0;
     border: none;
     border-radius: 0;
-
     padding: 10px;
-    float: left;
+    
     font-size: 16px;
   }
   
@@ -90,6 +79,8 @@
     padding: 10px;
     width: 15%;
     background: #d9d9d9;
+    display: flex;
+    flex-direction: row;
     color: #555;
     float: left;
     text-align: center;
@@ -97,7 +88,6 @@
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
-
   }
   
   button:hover {
