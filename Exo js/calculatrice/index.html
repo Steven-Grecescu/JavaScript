@@ -12,14 +12,22 @@
         <h1 class="titre">Calculatrice</h1>
     <table id="calcu">
         <tr>
-            <td colspan="3"><input type="text" id="resultat"></td>
+            <td colspan="3"><input type="text" id="resultat" value=""></td>
             <td><input type="button" value="<==" onclick="effacerUn()"  /> </td>
+        </tr>
+        <tr>
+
+            <td><input type="button" value="log" onclick="resoudreLog()" /> </td>
+            <td><input type="button" value="ln" onclick="resoudreLn()" /> </td>
+            <td><input type="button" value="sin" onclick="resoudreSin()" /> </td>
+            <td><input type="button" value="C" onclick="effacer()" /> </td>
         </tr>
         <tr>
             <td><input type="button" value="x²" onclick="resoudreCarrer()"  /> </td>
             <td><input type="button" value="1/x" onclick="resoudreInverse()" /> </td>
             <td><input type="button" value="√x" onclick="resoudreRacineCarrer()" /> </td>
-            <td><input type="button" value="C" onclick="effacer()" /> </td>
+            <td><input type="button" value="π" onclick="display('3.141592')" onkeydown="evenementTouche(event)"  /> </td>
+
         </tr>
         <tr>
             <td><input type="button" value="1" onclick="display('1')" onkeydown="evenementTouche(event)"> </td>

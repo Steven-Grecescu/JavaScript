@@ -6,16 +6,16 @@ function ajouterTache() {
     const DIV = document.createElement("div");
 
     SPAN.textContent = TACHE;
+    
+    const EFFACER = document.createElement("button");
+    EFFACER.textContent = "Effacer";
+    EFFACER.classList.add("Effacer");
+    EFFACER.setAttribute("onclick", "supprimerTache(" + tacheId + ")");
 
     const MODIFIER = document.createElement("button");
     MODIFIER.textContent = "Modifier";
     MODIFIER.classList.add("Modifier");
     MODIFIER.setAttribute("onclick", "modifierTache(" + tacheId + ")");
-
-    const EFFACER = document.createElement("button");
-    EFFACER.textContent = "Effacer";
-    EFFACER.classList.add("Effacer");
-    EFFACER.setAttribute("onclick", "supprimerTache(" + tacheId + ")");
 
     DIV.appendChild(SPAN);
     DIV.appendChild(MODIFIER);

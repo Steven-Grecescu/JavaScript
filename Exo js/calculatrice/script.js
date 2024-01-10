@@ -3,32 +3,32 @@ function display(val) {
 }
 
 function evenementTouche(event) {
-  switch (event.key) {
-    case "1" || "2" || "3" || "4" || "5" || "6" || "7" || "8" || "9" || "0" || "/" || "*" || "+" || "-" || ".":
-      document.getElementById("resultat").value += event.key;
-      break;
+  const touchesAutorisees = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0","/", "*", "+", "-", ".", "=" ];
 
-    case "=":
-      resoudre();
-      break;
-    case "Backspace":
-      effacerUn();
-      break;
-    case "Delete" || event.key == "c" || event.key == "C":
-      effacer();
-      break;
-    case "²":
-      resoudreCarrer();
-      break;
+  if (touchesAutorisees.includes(event.key)) {
+    document.getElementById("resultat").value += event.key;
+  } else {
+    switch (event.key) {
+      case "=":
+        resoudre();
+        break;
+      case "Backspace":
+        effacerUn();
+        break;
+      case "Delete":
+        effacer();
+        break;
+      case "²":
+        resoudreCarrer();
+        break;
+      default:
+        break;
+    }
   }
 }
-
 function effacerUn() {
   let verif = document.getElementById("resultat").value;
-  document.getElementById("resultat").value = verif.substring(
-    0,
-    verif.length - 1
-  );
+  document.getElementById("resultat").value = verif.substring(0,verif.length - 1);
 }
 
 function resoudre() {
@@ -54,6 +54,25 @@ function resoudreInverse() {
   let y = 1 / x;
   document.getElementById("resultat").value = y;
 }
+
+function resoudreLn(){
+  let x = document.getElementById("resultat").value;
+  let y = Math.log(x);
+  document.getElementById("resultat").value = y;
+}
+
+function resoudreLog(){
+  let x = document.getElementById("resultat").value;
+  let y = math.log10(x);
+  document.getElementById("resultat").value = y;
+}
+
+function resoudreSin(){
+  let x = document.getElementById("resultat").value;
+  let y = math.sin(x);
+  document.getElementById("resultat").value = y;
+}
+
 function effacer() {
   document.getElementById("resultat").value = "";
 }
