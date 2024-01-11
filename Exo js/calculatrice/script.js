@@ -3,9 +3,9 @@ function display(val) {
 }
 
 function evenementTouche(event) {
-  const touchesAutorisees = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0","/", "*", "+", "-", ".", "=" ];
+  const TOUCHES_AUTORISEES = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0","/", "*", "+", "-", "." ];
 
-  if (touchesAutorisees.includes(event.key)) {
+  if (TOUCHES_AUTORISEES.includes(event.key)) {
     document.getElementById("resultat").value += event.key;
   } else {
     switch (event.key) {

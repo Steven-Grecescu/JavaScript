@@ -21,8 +21,8 @@ function ajouterTache() {
     DIV.appendChild(MODIFIER);
     DIV.appendChild(EFFACER);
     DIV.classList.add("tache" + tacheId);
-    tacheId++;
     document.querySelector("#listeTaches").appendChild(DIV);
+    tacheId++;
   }
 }
 

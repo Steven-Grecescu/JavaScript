@@ -1,0 +1,19 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+.dark-mode {
+  background-color: #1a1818;
+  color: white;
+}
+form {
+  margin-top: 300px;
+  text-align: center;
+  text-decoration: none;
+}
+button {
+  text-align: center;
+  margin: 20px;
+  text-decoration: none;
+}
