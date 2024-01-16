@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de présentation du DOM</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="" class="logo" onclick="clicSurImage()"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page1.html">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="h1">Site de présentation du DOM</h1>
+        <div class="container">
+            <button id="btn1">Partie 1</button>
+            <button id="btn2">Partie 2</button>
+            <button id="btn3">Partie 3</button>
+            <div id="partie1" class="partie" onclick="clicP1()">
+                <h2>Partie 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam modi inventore sit repellat cupiditate recusandae, 
+                    odio excepturi consequuntur sed qui voluptates animi voluptatum, facere hic officiis totam? Reprehenderit, dignissimos?</p>
+            </div>
+            <div id="partie2" class="partie" onclick="clicP2()">
+                <h2>Partie 2</h2>
+                <p>Lorsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam modi inventore sit repellat cupiditate recusandae, 
+                    odio excepturi consequuntur sed qui voluptates animi voluptatum, facere hic officiis totam? Reprehenderit, dignissimos?</p>
+            </div>
+            <div id="partie3" class="partie" onclick="clicP3()">
+                <h2>Partie 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aperiam modi inventore sit repellat cupiditate recusandae, 
+                    odio excepturi consequuntur sed qui voluptates animi voluptatum, facere hic officiis totam? Reprehenderit, dignissimos?</p>
+            </div>
+        </div>
+        <!-- <form id="form" method="POST"> -->
+            <label>Nom :</label>
+            <!-- <input type="text" name="nom" onchange="changementValeur()" onfocus="selection()" onblur="finFocus()" /> -->
+            <!-- <input type="text" name="nom" onfocus="selection()" onblur="deselection()" /> -->
+            <input type="text" name="nom" id="input1" />
+            <label>Prenom :</label>
+            <!-- <input type="text" name="prenom" onfocus="selection()" onblur="deselection()" /> -->
+            <input type="text" name="prenom" id="input2" />
+            <label for="">Email :</label>
+            <input type="text" name="Mail" id="input3">
+            <br>
+            <label for="">Niveau d'étude</label>
+            <select name="niveau" id="">
+                <option value=""></option>
+                <option value="BEP" onselect="SelectionBEP()">BEP</option>
+                <option value="CAP">CAP</option>
+                <option value="BAC">BAC</option>
+            </select>
+        <!-- </form> -->
+ <br>
+        <input type="text" id="morse" class="morse">
+        <input type="text" id="resultat" class="morse">
+<br>
+        <form action="" method="GET" id="FormCalc">
+            <input type="number" name="Nombre1" id="Nombre1">
+            <select name="" id="Operateur">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input type="number" name="Nombre2" id="Nombre2">
+            <button type="submit">Envoyer</button>
+            <label for="" id="ResultatOperation" name="ResultatOperation">=</label>
+        </form>
+        <br>
+  
+    </main>
+    <footer id="footer">
+        &#169; AFCI 2021
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

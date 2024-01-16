@@ -21,12 +21,12 @@
 
 //autre façon
 
-let partie = document.getElementsByClassName("partie");
+let parties = document.getElementsByClassName("partie");
 
-for(let i = 0; i < partie.length; i++){
-    partie[i].querySelector("p").style.color = "blue";
-    partie[i].querySelector("h2").style.color = "green";
-    partie[i].querySelector("h2").style.border = "3px solid black";
-    partie[i].querySelector("h2").style.borderRadius = "10px";
+for(let i = 0; i < parties.length; i++){
+    parties[i].querySelector("p").style.color = "blue";
+    parties[i].querySelector("h2").style.color = "green";
+    parties[i].querySelector("h2").style.border = "3px solid black";
+    parties[i].querySelector("h2").style.borderRadius = "10px";
 
 }
