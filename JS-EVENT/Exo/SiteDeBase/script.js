@@ -170,6 +170,8 @@ morse.addEventListener("input", function(){
 
 });
 
+//6
+
 let FormCalc=document.getElementById("FormCalc");
 let Nombre1=document.getElementById("Nombre1");
 let Nombre2=document.getElementById("Nombre2");
